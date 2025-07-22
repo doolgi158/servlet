@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Get Data - getData.html</title>
+	<link href="../image/icon.png" rel="icon" type="image/x-icon" />
+
+	<style>
+		#address{ width: 250px; }
+		button[type='button'], button[type='reset']{ margin-top: 6px; }
+	</style>
+</head>
+<body>
+<!--
+<form id="dataForm" method="post" action="/servletExample/getData">
+	<label>이 름 : </label>
+	<input type="text" name="name" id="name" placeholder="이름" required="required" /><br />
+	<label>주 소 : </label>
+	<input type="text" name="address" id="address" placeholder="주소" required="required" /><br />
+	
+	<button type="submit">전송</button>&nbsp;&nbsp;
+	<button type="reset">취소</button>
+</form>
+ -->
+
+	<form name="dataForm" id="dataForm">
+		<label>이 름 : </label>
+		<input type="text" name="name" id="name" placeholder="이름 입력" /><br />
+		<label>주 소 : </label>
+		<input type="text" name="address" id="address" placeholder="주소 입력" /><br />
+	
+		<button type="button" id="submitBtn">전송</button>&nbsp;&nbsp;  
+		<button type="reset">취소</button>
+	</form>
+	
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/getData.js"></script>
+</body>
+</html>

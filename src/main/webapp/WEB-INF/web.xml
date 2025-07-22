@@ -19,5 +19,14 @@
     <servlet-mapping>
     	<servlet-name>firstServlet</servlet-name>
     	<url-pattern>/first</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>helloServlet</servlet-name>
+    	<servlet-class>com.example.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>helloServlet</servlet-name>
+    	<url-pattern>/hello</url-pattern>
     </servlet-mapping>  
 </web-app>
