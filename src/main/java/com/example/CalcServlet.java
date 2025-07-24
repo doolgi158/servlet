@@ -30,10 +30,10 @@ public class CalcServlet extends HttpServlet {
 		out.println("<body>");
 		out.println("<h1>계산결과</h1><hr />");
 		switch(calc) {
-		case "+" -> out.println("<div>" + number1 + calc + number2 + "=" + (number1 + number2));
-		case "-" -> out.println("<div>" + number1 + calc + number2 + "=" + (number1 - number2));
-		case "*" -> out.println("<div>" + number1 + calc + number2 + "=" + (number1 * number2));
-		case "/" -> out.println("<div>" + number1 + calc + number2 + "=" + (number1 / number2));
+			case "+" -> out.println("<div>" + number1 + calc + number2 + "=" + (number1 + number2));
+			case "-" -> out.println("<div>" + number1 + calc + number2 + "=" + (number1 - number2));
+			case "*" -> out.println("<div>" + number1 + calc + number2 + "=" + (number1 * number2));
+			case "/" -> out.println("<div>" + number1 + calc + number2 + "=" + ((double)number1 / (double)number2));
 		}
 		out.println("<br /><a href='#' onclick='history.back()'>이전 페이지</a>");
 		out.println("</body>");

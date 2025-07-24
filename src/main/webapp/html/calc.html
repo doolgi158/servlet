@@ -9,13 +9,15 @@
 	<form name="frm" id="frm">
 		<h3>계산기</h3><hr />
 		<input type="number" name="num1" id="num1"/>
-		<select name="operator">
+		<select name="operator" id="operator">
 			<option value="+">+</option>
 			<option value="-">-</option>
 			<option value="*">*</option>
 			<option value="/">/</option>
 		</select>
 		<input type="number" name="num2" id="num2"/>
+		<label>=</label>
+		<input type="text" name="result" id="result" readonly />
 		<button type="button" id="btn">계산하기</button>
 		<button type="reset">다시입력</button>
 	</form>
