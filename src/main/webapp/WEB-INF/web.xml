@@ -28,5 +28,9 @@
     <servlet-mapping>
     	<servlet-name>helloServlet</servlet-name>
     	<url-pattern>/hello</url-pattern>
-    </servlet-mapping>  
+    </servlet-mapping>
+    
+    <listener>
+    	<listener-class>com.example.listener.DriverCleanupListener</listener-class>
+    </listener>
 </web-app>
